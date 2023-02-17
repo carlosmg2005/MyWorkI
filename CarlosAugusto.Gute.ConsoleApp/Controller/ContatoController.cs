@@ -10,20 +10,19 @@ using System.Threading.Tasks;
 
 namespace CarlosAugusto.Gute.ConsoleApp.Controller
 {
-    class ContaController
+    class ContatoController
     {
         public CrmServiceClient ServiceClient { get; set; }
-        public Conta Conta { get; set; }
+        public Contato Contato { get; set; }
 
-        public ContaController(CrmServiceClient crmServiceClient) 
+        public ContatoController(CrmServiceClient crmServiceClient) 
         { 
             ServiceClient= crmServiceClient;
-            this.Conta = new Conta(ServiceClient);
+            this.Contato = new Contato(ServiceClient);
         }
         public Guid Create()
         {
-            return Conta.Create();
+            return Contato.Create();
         }
-
      }
 }

@@ -19,7 +19,7 @@ namespace CarlosAugusto.Gute.ConsoleApp
             CrmServiceClient serviceClient = new CrmServiceClient($"AuthType=ClientSecret;Url=https://{url}.crm2.dynamics.com/;AppId={clientId};ClientSecret={clientSecret};");
 
             if (!serviceClient.CurrentAccessToken.Equals(null))
-                Console.WriteLine("Conexão Realizada com Sucesso!!!");
+                Console.WriteLine("Conexão Realizada com Sucesso!!!\n\n");
             else
                 Console.WriteLine("Erro na Conexão");
 
